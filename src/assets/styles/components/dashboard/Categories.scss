@@ -1,0 +1,12 @@
+.dashboard {
+  @import "../../Vars.scss";
+
+  .categories__title {
+    background: $main-color;
+    color: white;
+    font-size: 25px;
+    position: absolute;
+    padding-left: 30px;
+    width: 100%;
+  }
+}
