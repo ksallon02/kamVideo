@@ -5,7 +5,7 @@ const useInicialState = (API, setLoading) => {
   //Se ejecutara cuando React monte o actualice el componente.
   //Se ejecuta luego de hacer el primer render  
   useEffect(() => {
-    setLoading(true);
+    setLoading(true);    
     fetch(API)
       .then((response) => response.json())
       .then((data) => {
@@ -13,7 +13,7 @@ const useInicialState = (API, setLoading) => {
         //   setVideos(data);
         //   setLoading(false);
         // }, 4000)
-        setVideos(data);
+        setVideos(data.initalState);
         setLoading(false);
       });
       // eslint-disable-next-line

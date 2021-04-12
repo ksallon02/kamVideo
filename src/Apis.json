@@ -1,3 +1,3 @@
 {
-    "movies": "http://localhost:3333/initalState"
+    "movies": "https://raw.githubusercontent.com/ksallon02/kamVideo/master/db.json"
 }
