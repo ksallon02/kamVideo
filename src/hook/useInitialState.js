@@ -12,7 +12,7 @@ const useInicialState = (API, setLoading) => {
         // setTimeout(()=> {
         //   setVideos(data);
         //   setLoading(false);
-        // }, 4000)
+        // }, 400000)
         setVideos(data.initalState);
         setLoading(false);
       });

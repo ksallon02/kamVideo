@@ -13,7 +13,7 @@ import "../../assets/styles/App.scss";
 
 const Dashboard = () => {
   const [loading, setLoading] = useState(false);
-  const videos = useInitialState(Apis.movies, setLoading);
+  const videos = useInitialState(Apis.db, setLoading);
   const [query, setQuery] = useState("");
   const [showMovie, setShowMovie] = useState(false);
 

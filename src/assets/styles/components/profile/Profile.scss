@@ -1,0 +1,77 @@
+@import "../../Vars.scss";
+
+.profile {
+  font-family: $theme-font;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  .profile-back1 {
+    line-height: 30vh;
+    background-image: url("../../../image/banner.jpg");
+    border-bottom: 1px solid #386c8b;
+    z-index: -1;
+  }
+
+  .profile-back2 {
+    line-height: 70vh;
+    background-color: $main-color;
+    border-bottom: 1px solid #386c8b;
+  }
+
+  .content-profile {
+    background-color: whitesmoke;
+    position: absolute;
+    left: calc(50vw - 25vw);
+    top: 20vh;
+    width: 50vw;
+    height: 60vh;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .content-profile-1 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .content-profile-2 {
+    margin-top: 15px;
+    p {
+      text-align: center;
+      width: 70%;
+      color: grey;
+    }    
+  }
+
+  .flex-column {
+    display: flex;
+    flex-direction: column;
+  }
+  .flex-center {
+    display: flex;
+    justify-content: center;
+  }
+
+  .profile-name {
+    font-weight: bold;
+    font-size: x-large;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+  }
+
+  .profile-icon {        
+    height: 200px;
+    border-radius: 50%;
+    margin-top: -90px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .profile-icon {
+      width: 150px;
+      height: 150px;
+    }
+  }
+}

@@ -6,11 +6,9 @@ import { faEnvelope, faLock, faExclamationTriangle } from "@fortawesome/free-sol
 import { useForm } from "react-hook-form";
 import ErrorInput from "../ErrorInput";
 import { EmailRules, PasswordRules } from "./LoginRules";
+import Apis from "../../Apis.json";
+import useFindUsers from "../../hook/useFindUsers";
 
-var userValid = {
-  email: "ksallon@csye.com",
-  password: "123456789"
-}
 
 const Login = ({ setToken }) => {
   // const [email, setEmail] = useState("");
@@ -18,15 +16,18 @@ const Login = ({ setToken }) => {
   let _ = require('lodash');
   const { register, formState: { errors }, handleSubmit } = useForm();
   const [showError, setShowError] = useState(false);
+  const userValid = useFindUsers(Apis.db);
   
-  const postSubmit = (data) => {  
-    if(_.isEqual(data, userValid)){
-      sessionStorage.setItem("token", JSON.stringify(data));
-      setToken(data);
-      window.location.href = '/Dashboard';      
-    } else{
-      setShowError(true)
-    }    
+  const postSubmit = (data) => {
+    _.findIndex(userValid, user => {    
+      if(_.isEqual(data, user.login)){
+        sessionStorage.setItem("token", JSON.stringify(user));
+        setToken(data);
+        window.location.href = '/Dashboard';      
+      } else{
+        setShowError(true);
+      }
+    });
   }
 
   return (

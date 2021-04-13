@@ -1,192 +1,210 @@
 {
-    "initalState": {
-      "mylist": [
-        {
-          "id": 14,
-          "slug": "tvshow-2",
-          "title": "Game of Thrones",
-          "type": "Scripted",
-          "language": "English",
-          "year": 2011,
-          "contentRating": "16+",
-          "duration": 164,
-          "cover": "https://m.media-amazon.com/images/M/MV5BYTRiNDQwYzAtMzVlZS00NTI5LWJjYjUtMzkwNTUzMWMxZTllXkEyXkFqcGdeQXVyNDIzMzcwNjc@._V1_.jpg",
-          "description": "Vestibulum ac est lacinia nisi venenatis tristique",
-          "source": "https://www.youtube.com/embed/KPLWWIOCOOQ"
-        },
-        {
-          "id": 15,
-          "slug": "tvshow-2",
-          "title": "Avengers: Endgame",
-          "type": "Scripted",
-          "language": "English",
-          "year": 2019,
-          "contentRating": "10+",
-          "duration": 164,
-          "cover": "https://thumbor.forbes.com/thumbor/fit-in/1200x0/filters%3Aformat%28jpg%29/https%3A%2F%2Fblogs-images.forbes.com%2Fmarkhughes%2Ffiles%2F2019%2F04%2FAVENGERS-ENDGAME-poster-2-1200x1823.jpg",
-          "description": "Vestibulum ac est lacinia nisi venenatis tristique",
-          "source": "https://www.youtube.com/embed/TcMBFSGVi1c"
-        }
-      ],
-      "trends": [
-        {
-          "id": 2,
-          "slug": "tvshow-2",
-          "title": "In the Dark",
-          "type": "Scripted",
-          "language": "English",
-          "year": 2009,
-          "contentRating": "16+",
-          "duration": 164,
-          "cover": "https://m.media-amazon.com/images/M/MV5BYzcxMzJlYzktYjI2ZS00NGNkLWI4YzQtMGZkNjYwMTYxMGM1XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg",
-          "description": "Vestibulum ac est lacinia nisi venenatis tristique",
-          "source": "https://www.youtube.com/embed/Thazgd1HFus"
-        },
-        {
-          "id": 3,
-          "slug": "tvshow-3",
-          "title": "Instinct",
-          "type": "Adventure",
-          "language": "English",
-          "year": 2002,
-          "contentRating": "16+",
-          "duration": 137,
-          "cover": "https://www.cine.com/peliculas4/105600/105600_0.jpg",
-          "description": "Vestibulum ac est lacinia nisi venenatis tristique",
-          "source": "https://www.youtube.com/embed/F-0TlzXMtHM"
-        },
-        {
-          "id": 4,
-          "slug": "tvshow-4",
-          "title": "Grand Hotel",
-          "type": "Comedy",
-          "language": "English",
-          "year": 2014,
-          "contentRating": "16+",
-          "duration": 163,
-          "cover": "https://upload.wikimedia.org/wikipedia/en/4/49/Gran_Hotel.jpg",
-          "description": "Vestibulum ac est lacinia nisi venenatis tristique",
-          "source": "https://www.youtube.com/embed/QRyuFl5cRuc"
-        },
-        {
-          "id": 5,
-          "slug": "tvshow-5",
-          "title": "Stargate Atlantis",
-          "type": "Scripted",
-          "language": "English",
-          "year": 2014,
-          "contentRating": "16+",
-          "duration": 194,
-          "cover": "https://m.media-amazon.com/images/I/51PCCOxP4KL.jpg",
-          "description": "Vestibulum ac est lacinia nisi venenatis tristique",
-          "source": "https://www.youtube.com/embed/EloN2yDnY_s"
-        },
-        {
-          "id": 6,
-          "slug": "tvshow-6",
-          "title": "Final Space",
-          "type": "Scripted",
-          "language": "English",
-          "year": 2017,
-          "contentRating": "16+",
-          "duration": 124,
-          "cover": "https://i.pinimg.com/originals/c8/09/a2/c809a2d24e4832ad924b91e41251fe96.jpg",
-          "description": "Vestibulum ac est lacinia nisi venenatis tristique",
-          "source": "https://www.youtube.com/embed/Z4MGJI2zeRs"
-        },
-        {
-          "id": 7,
-          "slug": "tvshow-7",
-          "title": "The InBetween",
-          "type": "Drama",
-          "language": "English",
-          "year": 2011,
-          "contentRating": "16+",
-          "duration": 179,
-          "cover": "https://m.media-amazon.com/images/M/MV5BZWMyZTBjZjItYTQ1MC00MGNmLWIwMWMtNTM5MmVhZTJmZDI2XkEyXkFqcGdeQXVyODUxOTU0OTg@._V1_.jpg",
-          "description": "Vestibulum ac est lacinia nisi venenatis tristique",
-          "source": "https://www.youtube.com/embed/2tQDeDi4o1o"
-        }
-      ],
-      "originals": [
-        {
-          "id": 8,
-          "slug": "tvshow-8",
-          "title": "Stargate Atlantis",
-          "type": "Action",
-          "language": "English",
-          "year": 2012,
-          "contentRating": "16+",
-          "duration": 148,
-          "cover": "https://m.media-amazon.com/images/I/51PCCOxP4KL.jpg",
-          "description": "Vestibulum ac est lacinia nisi venenatis tristique",
-          "source": "https://www.youtube.com/embed/EloN2yDnY_s"
-        },
-        {
-          "id": 9,
-          "slug": "tvshow-9",
-          "title": "Alien Highway",
-          "type": "Action",
-          "language": "English",
-          "year": 2019,
-          "contentRating": "16+",
-          "duration": 128,
-          "cover": "https://m.media-amazon.com/images/M/MV5BYjU5MDg1ZDAtZDkwMy00MmU3LWFjZmItYjJhNTA3NWI4MjVlXkEyXkFqcGdeQXVyMjYwNDA2MDE@._V1_.jpg",
-          "description": "Vestibulum ac est lacinia nisi venenatis tristique",
-          "source": "https://www.youtube.com/embed/GrUpLUy6iRc"
-        },
-        {
-          "id": 10,
-          "slug": "tvshow-10",
-          "title": "Elementary",
-          "type": "Animation",
-          "language": "English",
-          "year": 2011,
-          "contentRating": "16+",
-          "duration": 346,
-          "cover": "https://images-na.ssl-images-amazon.com/images/I/91C9nX2Tu7L._SL1500_.jpg",
-          "description": "Vestibulum ac est lacinia nisi venenatis tristique",
-          "source": "https://www.youtube.com/embed/Ku6v3ZVPyTk"
-        },
-        {
-          "id": 11,
-          "slug": "tvshow-11",
-          "title": "Strange Angel",
-          "type": "War",
-          "language": "English",
-          "year": 2015,
-          "contentRating": "16+",
-          "duration": 226,
-          "cover": "https://images-na.ssl-images-amazon.com/images/I/61-icWG0flL.jpg",
-          "description": "Vestibulum ac est lacinia nisi venenatis tristique",
-          "source": "https://www.youtube.com/embed/yaTxH79EaQg"
-        },
-        {
-          "id": 12,
-          "slug": "tvshow-12",
-          "title": "Private Eyes",
-          "type": "Comedy",
-          "language": "English",
-          "year": 2018,
-          "contentRating": "16+",
-          "duration": 190,
-          "cover": "https://es.web.img3.acsta.net/pictures/18/07/13/15/31/5684549.jpg",
-          "description": "Vestibulum ac est lacinia nisi venenatis tristique",
-          "source": "https://www.youtube.com/embed/tpe1jlLGX0k"
-        },
-        {
-          "id": 13,
-          "slug": "tvshow-13",
-          "title": "NCIS: Los Angeles",
-          "type": "Drama",
-          "language": "English",
-          "year": 2010,
-          "contentRating": "16+",
-          "duration": 160,
-          "cover": "https://www.formulatv.com/images/series/posters/200/267/12_m1.jpg",
-          "description": "Vestibulum ac est lacinia nisi venenatis tristique",
-          "source": "https://www.youtube.com/embed/NvPBYlmCNG4"
-        }
-      ]
+  "initalState": {
+    "mylist": [
+      {
+        "id": 14,
+        "slug": "tvshow-2",
+        "title": "Game of Thrones",
+        "type": "Scripted",
+        "language": "English",
+        "year": 2011,
+        "contentRating": "16+",
+        "duration": 164,
+        "cover": "https://m.media-amazon.com/images/M/MV5BYTRiNDQwYzAtMzVlZS00NTI5LWJjYjUtMzkwNTUzMWMxZTllXkEyXkFqcGdeQXVyNDIzMzcwNjc@._V1_.jpg",
+        "description": "Vestibulum ac est lacinia nisi venenatis tristique",
+        "source": "https://www.youtube.com/embed/KPLWWIOCOOQ"
+      },
+      {
+        "id": 15,
+        "slug": "tvshow-2",
+        "title": "Avengers: Endgame",
+        "type": "Scripted",
+        "language": "English",
+        "year": 2019,
+        "contentRating": "10+",
+        "duration": 164,
+        "cover": "https://thumbor.forbes.com/thumbor/fit-in/1200x0/filters%3Aformat%28jpg%29/https%3A%2F%2Fblogs-images.forbes.com%2Fmarkhughes%2Ffiles%2F2019%2F04%2FAVENGERS-ENDGAME-poster-2-1200x1823.jpg",
+        "description": "Vestibulum ac est lacinia nisi venenatis tristique",
+        "source": "https://www.youtube.com/embed/TcMBFSGVi1c"
+      }
+    ],
+    "trends": [
+      {
+        "id": 2,
+        "slug": "tvshow-2",
+        "title": "In the Dark",
+        "type": "Scripted",
+        "language": "English",
+        "year": 2009,
+        "contentRating": "16+",
+        "duration": 164,
+        "cover": "https://m.media-amazon.com/images/M/MV5BYzcxMzJlYzktYjI2ZS00NGNkLWI4YzQtMGZkNjYwMTYxMGM1XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg",
+        "description": "Vestibulum ac est lacinia nisi venenatis tristique",
+        "source": "https://www.youtube.com/embed/Thazgd1HFus"
+      },
+      {
+        "id": 3,
+        "slug": "tvshow-3",
+        "title": "Instinct",
+        "type": "Adventure",
+        "language": "English",
+        "year": 2002,
+        "contentRating": "16+",
+        "duration": 137,
+        "cover": "https://www.cine.com/peliculas4/105600/105600_0.jpg",
+        "description": "Vestibulum ac est lacinia nisi venenatis tristique",
+        "source": "https://www.youtube.com/embed/F-0TlzXMtHM"
+      },
+      {
+        "id": 4,
+        "slug": "tvshow-4",
+        "title": "Grand Hotel",
+        "type": "Comedy",
+        "language": "English",
+        "year": 2014,
+        "contentRating": "16+",
+        "duration": 163,
+        "cover": "https://upload.wikimedia.org/wikipedia/en/4/49/Gran_Hotel.jpg",
+        "description": "Vestibulum ac est lacinia nisi venenatis tristique",
+        "source": "https://www.youtube.com/embed/QRyuFl5cRuc"
+      },
+      {
+        "id": 5,
+        "slug": "tvshow-5",
+        "title": "Stargate Atlantis",
+        "type": "Scripted",
+        "language": "English",
+        "year": 2014,
+        "contentRating": "16+",
+        "duration": 194,
+        "cover": "https://m.media-amazon.com/images/I/51PCCOxP4KL.jpg",
+        "description": "Vestibulum ac est lacinia nisi venenatis tristique",
+        "source": "https://www.youtube.com/embed/EloN2yDnY_s"
+      },
+      {
+        "id": 6,
+        "slug": "tvshow-6",
+        "title": "Final Space",
+        "type": "Scripted",
+        "language": "English",
+        "year": 2017,
+        "contentRating": "16+",
+        "duration": 124,
+        "cover": "https://i.pinimg.com/originals/c8/09/a2/c809a2d24e4832ad924b91e41251fe96.jpg",
+        "description": "Vestibulum ac est lacinia nisi venenatis tristique",
+        "source": "https://www.youtube.com/embed/Z4MGJI2zeRs"
+      },
+      {
+        "id": 7,
+        "slug": "tvshow-7",
+        "title": "The InBetween",
+        "type": "Drama",
+        "language": "English",
+        "year": 2011,
+        "contentRating": "16+",
+        "duration": 179,
+        "cover": "https://m.media-amazon.com/images/M/MV5BZWMyZTBjZjItYTQ1MC00MGNmLWIwMWMtNTM5MmVhZTJmZDI2XkEyXkFqcGdeQXVyODUxOTU0OTg@._V1_.jpg",
+        "description": "Vestibulum ac est lacinia nisi venenatis tristique",
+        "source": "https://www.youtube.com/embed/2tQDeDi4o1o"
+      }
+    ],
+    "originals": [
+      {
+        "id": 8,
+        "slug": "tvshow-8",
+        "title": "Stargate Atlantis",
+        "type": "Action",
+        "language": "English",
+        "year": 2012,
+        "contentRating": "16+",
+        "duration": 148,
+        "cover": "https://m.media-amazon.com/images/I/51PCCOxP4KL.jpg",
+        "description": "Vestibulum ac est lacinia nisi venenatis tristique",
+        "source": "https://www.youtube.com/embed/EloN2yDnY_s"
+      },
+      {
+        "id": 9,
+        "slug": "tvshow-9",
+        "title": "Alien Highway",
+        "type": "Action",
+        "language": "English",
+        "year": 2019,
+        "contentRating": "16+",
+        "duration": 128,
+        "cover": "https://m.media-amazon.com/images/M/MV5BYjU5MDg1ZDAtZDkwMy00MmU3LWFjZmItYjJhNTA3NWI4MjVlXkEyXkFqcGdeQXVyMjYwNDA2MDE@._V1_.jpg",
+        "description": "Vestibulum ac est lacinia nisi venenatis tristique",
+        "source": "https://www.youtube.com/embed/GrUpLUy6iRc"
+      },
+      {
+        "id": 10,
+        "slug": "tvshow-10",
+        "title": "Elementary",
+        "type": "Animation",
+        "language": "English",
+        "year": 2011,
+        "contentRating": "16+",
+        "duration": 346,
+        "cover": "https://images-na.ssl-images-amazon.com/images/I/91C9nX2Tu7L._SL1500_.jpg",
+        "description": "Vestibulum ac est lacinia nisi venenatis tristique",
+        "source": "https://www.youtube.com/embed/Ku6v3ZVPyTk"
+      },
+      {
+        "id": 11,
+        "slug": "tvshow-11",
+        "title": "Strange Angel",
+        "type": "War",
+        "language": "English",
+        "year": 2015,
+        "contentRating": "16+",
+        "duration": 226,
+        "cover": "https://images-na.ssl-images-amazon.com/images/I/61-icWG0flL.jpg",
+        "description": "Vestibulum ac est lacinia nisi venenatis tristique",
+        "source": "https://www.youtube.com/embed/yaTxH79EaQg"
+      },
+      {
+        "id": 12,
+        "slug": "tvshow-12",
+        "title": "Private Eyes",
+        "type": "Comedy",
+        "language": "English",
+        "year": 2018,
+        "contentRating": "16+",
+        "duration": 190,
+        "cover": "https://es.web.img3.acsta.net/pictures/18/07/13/15/31/5684549.jpg",
+        "description": "Vestibulum ac est lacinia nisi venenatis tristique",
+        "source": "https://www.youtube.com/embed/tpe1jlLGX0k"
+      },
+      {
+        "id": 13,
+        "slug": "tvshow-13",
+        "title": "NCIS: Los Angeles",
+        "type": "Drama",
+        "language": "English",
+        "year": 2010,
+        "contentRating": "16+",
+        "duration": 160,
+        "cover": "https://www.formulatv.com/images/series/posters/200/267/12_m1.jpg",
+        "description": "Vestibulum ac est lacinia nisi venenatis tristique",
+        "source": "https://www.youtube.com/embed/NvPBYlmCNG4"
+      }
+    ]
+  },
+  "users": [
+    {
+      "name": "Kamil Sallon Arroyo",
+      "userName": "ksallon",
+      "login": {
+        "email": "ksallon@csye.com",
+        "password": "123456789"
+      }
+    },
+    {
+      "name": "Hazel Gomez Vega",
+      "userName": "hgomez",
+      "login": {
+        "email": "hgomez@csye.com",
+        "password": "123456789"
+      }
     }
-  }
+  ]
+}

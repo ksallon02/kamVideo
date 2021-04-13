@@ -3,14 +3,9 @@ body {
   font-family: "Muli", sans-serif;
 }
 
-html,
-body,
-#app,
 .login {
-  height: 100%;
-}
 
-.login {
+  height: 100vh;
 
   .inputError{
     color: red;
