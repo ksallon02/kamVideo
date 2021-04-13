@@ -3,9 +3,10 @@ import PropTypes from "prop-types";
 import "../../assets/styles/components/dashboard/CarouselItem.scss";
 import playIcon from "../../assets/image/play-icon.png";
 import plusIcon from "../../assets/image/plus-icon.png";
+import removeIcon from "../../assets/image/remove.png";
 
 
-const CarouselItem = ({cover, title, year, contentRating, duration, source, setShowMovie}) => {
+const CarouselItem = ({cover, title, year, contentRating, duration, source, setShowMovie, myList = false}) => {
 
   return (
     <>
@@ -15,11 +16,11 @@ const CarouselItem = ({cover, title, year, contentRating, duration, source, setS
           <div>
             <div className="tooltip" onClick={() => setShowMovie(source)}>
               {/* <span className="tooltiptext">Reproducir</span> */}
-              <img className="carousel-item__details--img scale" src={playIcon} alt="Play Icon" />
+              <img className="carousel-item__details--img scale" src={playIcon} alt="Play Icon" />&nbsp;
             </div>
             <div className="tooltip" onClick={() => alert('Agregado a la lista')}>
               {/* <span className="tooltiptext">Agregar a Mi Lista</span> */}
-              <img className="carousel-item__details--img scale" src={plusIcon} alt="Plus Icon" />
+              <img className="carousel-item__details--img scale" src={myList ? removeIcon : plusIcon} alt="Plus Icon" />
             </div>
           </div>
           <p className="carousel-item__details--title">{title}</p>

@@ -5,7 +5,8 @@ import CarouselItem from "./CarouselItem";
 import "../../assets/styles/components/dashboard/FilterMovie.scss";
 
 const FilterMovie = ({data, query, setShowMovie}) => {
-    const allMovies = data.trends.concat(data.mylist).concat(data.originals);
+    let _ = require('lodash');
+    const allMovies = _.uniqBy(data.trends.concat(data.mylist).concat(data.originals), 'id');
     const dataFilter = allMovies.filter(item => item.title.toLowerCase().includes(query.toLowerCase()));
 
     return (

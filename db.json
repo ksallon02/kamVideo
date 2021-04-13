@@ -106,11 +106,76 @@
         "cover": "https://m.media-amazon.com/images/M/MV5BZWMyZTBjZjItYTQ1MC00MGNmLWIwMWMtNTM5MmVhZTJmZDI2XkEyXkFqcGdeQXVyODUxOTU0OTg@._V1_.jpg",
         "description": "Vestibulum ac est lacinia nisi venenatis tristique",
         "source": "https://www.youtube.com/embed/2tQDeDi4o1o"
+      },
+      {
+        "id": 16,
+        "slug": "tvshow-7",
+        "title": "Hacker",
+        "type": "Action",
+        "language": "English",
+        "year": 2016,
+        "contentRating": "16+",
+        "duration": 150,
+        "cover": "https://m.media-amazon.com/images/M/MV5BYjk3ZWQ4ZmMtNzM1OS00NDQxLWJmZjctNzFlODAyODRkMjcyXkEyXkFqcGdeQXVyMjEwODIzODA@._V1_.jpg",
+        "description": "Vestibulum ac est lacinia nisi venenatis tristique",
+        "source": "https://www.youtube.com/embed/y8HsD9qmTiY"
+      },
+      {
+        "id": 17,
+        "slug": "tvshow-7",
+        "title": "Grey's Anatomy",
+        "type": "Drama",
+        "language": "English",
+        "year": 2005,
+        "contentRating": "16+",
+        "duration": 179,
+        "cover": "https://i.pinimg.com/originals/2e/1a/c6/2e1ac6b3ec99b236614eb45cdb652aae.jpg",
+        "description": "Vestibulum ac est lacinia nisi venenatis tristique",
+        "source": "https://www.youtube.com/embed/q1pcpgREQ5c"
+      },
+      {
+        "id": 18,
+        "slug": "tvshow-7",
+        "title": "The Seven Deadly Sins",
+        "type": "Drama",
+        "language": "English",
+        "year": 2012,
+        "contentRating": "16+",
+        "duration": 179,
+        "cover": "https://elcomercio.pe/resizer/65ySCPM6OBCbJIQpYF3o3N5NLVE=/620x0/smart/filters:format(jpeg):quality(75)/cloudfront-us-east-1.images.arcpublishing.com/elcomercio/5TXCQ6YDFVCDLM2YR3S2NDE6NE.jpg",
+        "description": "Vestibulum ac est lacinia nisi venenatis tristique",
+        "source": "https://www.youtube.com/embed/wxcvbL6o55M"
+      },
+      {
+        "id": 19,
+        "slug": "tvshow-7",
+        "title": "Modern Family",
+        "type": "Drama",
+        "language": "English",
+        "year": 2009,
+        "contentRating": "16+",
+        "duration": 179,
+        "cover": "https://testkammer.com/wp-content/uploads/2020/05/Poster-der-ersten-Staffel-der-Serie-Modern-Family.jpg",
+        "description": "Vestibulum ac est lacinia nisi venenatis tristique",
+        "source": "https://www.youtube.com/embed/X0lRjbrH-L8"
+      },
+      {
+        "id": 20,
+        "slug": "tvshow-7",
+        "title": "The Walking Dead",
+        "type": "Drama",
+        "language": "English",
+        "year": 2010,
+        "contentRating": "16+",
+        "duration": 179,
+        "cover": "https://pbs.twimg.com/media/EGTGpN_XUAI9W5Q.jpg",
+        "description": "Vestibulum ac est lacinia nisi venenatis tristique",
+        "source": "https://www.youtube.com/embed/R1v0uFms68U"
       }
     ],
     "originals": [
       {
-        "id": 8,
+        "id": 5,
         "slug": "tvshow-8",
         "title": "Stargate Atlantis",
         "type": "Action",
@@ -186,6 +251,86 @@
         "cover": "https://www.formulatv.com/images/series/posters/200/267/12_m1.jpg",
         "description": "Vestibulum ac est lacinia nisi venenatis tristique",
         "source": "https://www.youtube.com/embed/NvPBYlmCNG4"
+      },
+
+
+      {
+        "id": 21,
+        "slug": "tvshow-13",
+        "title": "¿Quién Mató a Sara?",
+        "type": "Drama",
+        "language": "Español",
+        "year": 2021,
+        "contentRating": "16+",
+        "duration": 160,
+        "cover": "https://e00-marca.uecdn.es/assets/multimedia/imagenes/2021/03/26/16167271466672.jpg",
+        "description": "Vestibulum ac est lacinia nisi venenatis tristique",
+        "source": "https://www.youtube.com/embed/tyU4zz_ds-s"
+      },
+      {
+        "id": 22,
+        "slug": "tvshow-13",
+        "title": "You",
+        "type": "Drama",
+        "language": "English",
+        "year": 2018,
+        "contentRating": "16+",
+        "duration": 160,
+        "cover": "https://idolosolvidados.com/wp-content/uploads/2019/03/multimedia.normal.b308c5b49baeea57.594f555f6e6574666c69785f6e6f726d616c2e6a7067.jpg",
+        "description": "Vestibulum ac est lacinia nisi venenatis tristique",
+        "source": "https://www.youtube.com/embed/srx7fSBwvF4"
+      },
+      {
+        "id": 23,
+        "slug": "tvshow-13",
+        "title": "The Boys",
+        "type": "Drama",
+        "language": "English",
+        "year": 2010,
+        "contentRating": "16+",
+        "duration": 160,
+        "cover": "https://decine21.com/img/upload/obras/the-boys-40550/src/the-boys-40550-c.jpg",
+        "description": "Vestibulum ac est lacinia nisi venenatis tristique",
+        "source": "https://www.youtube.com/embed/tcrNsIaQkb4"
+      },
+      {
+        "id": 24,
+        "slug": "tvshow-13",
+        "title": "Historia de un Matrimonio",
+        "type": "Drama",
+        "language": "English",
+        "year": 2019,
+        "contentRating": "16+",
+        "duration": 160,
+        "cover": "https://pics.filmaffinity.com/Historia_de_un_matrimonio-544809314-large.jpg",
+        "description": "Vestibulum ac est lacinia nisi venenatis tristique",
+        "source": "https://www.youtube.com/embed/pFg0Rk3L9SY"
+      },
+      {
+        "id": 25,
+        "slug": "tvshow-13",
+        "title": "The Promised Neverland",
+        "type": "Drama",
+        "language": "English",
+        "year": 2018,
+        "contentRating": "16+",
+        "duration": 160,
+        "cover": "https://www.normaeditorial.com/upload/media/albumes/0001/07/xthumb_6207_albumes_big.jpeg.pagespeed.ic.pcAMg7cECU.jpg",
+        "description": "Vestibulum ac est lacinia nisi venenatis tristique",
+        "source": "https://www.youtube.com/embed/ApLudqucq-s"
+      },
+      {
+        "id": 26,
+        "slug": "tvshow-13",
+        "title": "Spider Man Homecoming",
+        "type": "Drama",
+        "language": "English",
+        "year": 2017,
+        "contentRating": "16+",
+        "duration": 160,
+        "cover": "https://m.media-amazon.com/images/I/51M8wBvVGyL._AC_.jpg",
+        "description": "Vestibulum ac est lacinia nisi venenatis tristique",
+        "source": "https://www.youtube.com/embed/grusgXCahH8"
       }
     ]
   },

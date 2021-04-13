@@ -19,11 +19,11 @@ const Login = ({ setToken }) => {
   const userValid = useFindUsers(Apis.db);
   
   const postSubmit = (data) => {
-    _.findIndex(userValid, user => {    
+    _.findIndex(userValid, user => {
       if(_.isEqual(data, user.login)){
         sessionStorage.setItem("token", JSON.stringify(user));
         setToken(data);
-        window.location.href = '/Dashboard';      
+        window.location.href = '/Dashboard';
       } else{
         setShowError(true);
       }

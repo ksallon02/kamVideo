@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 
 const useInicialState = (API, setLoading) => {
-  const [videos, setVideos] = useState({});  
+  const [videos, setVideos] = useState({});
   //Se ejecutara cuando React monte o actualice el componente.
-  //Se ejecuta luego de hacer el primer render  
+  //Se ejecuta luego de hacer el primer render
   useEffect(() => {
     setLoading(true);    
     fetch(API)

@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 
 const useFindUsers = (API) => {
   const [users, setUsers] = useState({});
-  useEffect(() => {
+  useEffect(() => {    
     fetch(API)
       .then((response) => response.json())
       .then((data) => {

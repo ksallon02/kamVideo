@@ -9,7 +9,7 @@ const MoviesSection = ({ data, setShowMovie }) => {
       {data.mylist?.length > 0 && (
         <Categories title="Mi Lista">
           <Carousel>
-            {data.mylist?.map((item) => (<CarouselItem key={item.id} {...item} setShowMovie={setShowMovie} />))}
+            {data.mylist?.map((item) => (<CarouselItem key={item.id} {...item} setShowMovie={setShowMovie} myList={true}/>))}
           </Carousel>
         </Categories>
       )}
