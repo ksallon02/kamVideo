@@ -1,4 +1,5 @@
 import React from "react";
+import ReactDOM from 'react-dom';
 import "../assets/styles/components/Modal.scss";
 
 const Modal = ({ showMovie, setShowMovie }) => {
@@ -13,7 +14,7 @@ const Modal = ({ showMovie, setShowMovie }) => {
   showMovie && window.addEventListener("click", closeModal);
 
   return (
-    showMovie && (
+    showMovie && ReactDOM.createPortal(
       <div className="modal-playMovie">
         <div id="modalPlaMovie" className="modal" style={{ display: "block" }}>
           <div className="modal-content">
@@ -33,7 +34,7 @@ const Modal = ({ showMovie, setShowMovie }) => {
           </div>
         </div>
       </div>
-    )
+    , document.getElementById('modal'))
   );
 };
 

@@ -7,6 +7,10 @@ body {
 
   height: 100vh;
 
+  .login-logo{
+    width: 200px;
+  }
+
   .inputError{
     color: red;
     input{
@@ -113,8 +117,8 @@ body {
     color: white;
   }
 
-  .button {
-    background-color: rgba(255, 255, 255, 0.3);
+  .button {    
+    background-color: #bf1650;
     border: none;
     border-radius: 25px;
     color: white;
@@ -125,6 +129,10 @@ body {
     height: 50px;
     letter-spacing: 1px;
     margin: 10px 0px;
+  }
+
+  .button:hover{
+    background-color: #c54a75;
   }
 
 }

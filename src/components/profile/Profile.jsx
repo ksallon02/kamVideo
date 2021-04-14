@@ -2,18 +2,20 @@ import React from "react";
 import Footer from "../dashboard/Footer";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCrown } from "@fortawesome/free-solid-svg-icons";
-import {
-  faFacebook,
-  faTwitter,
-  faInstagram,
-  faWhatsapp,
-} from "@fortawesome/free-brands-svg-icons";
+import { faFacebook, faTwitter, faInstagram, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import md5 from "md5";
 import Header from "../dashboard/Header";
+import { Link, useParams } from "react-router-dom";
+import useGetUrlParam from "../../hook/useGetUrlParam";
 import "../../assets/styles/components/profile/Profile.scss";
 
-const Profile = ({ login = {}, name =""}) => {
+const Profile = ({ login = {}, name = "", userName = ""}) => {
   const hash = md5(login.email);
+  const { idProfile } = useParams();
+  const email = useGetUrlParam("email");
+
+  console.log({email: email, idProfile: idProfile});
+
   return (
     <React.Fragment>
       <Header />
@@ -47,13 +49,16 @@ const Profile = ({ login = {}, name =""}) => {
                 <FontAwesomeIcon icon={faWhatsapp} size="2x" />
               </div>
             </div>
-            <div className="flex-center">
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book.
-              </p>
+            <div>
+              <center>
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and typesetting
+                  industry. Lorem Ipsum has been the industry's standard dummy
+                  text ever since the 1500s, when an unknown printer took a galley
+                  of type and scrambled it to make a type specimen book.
+                </p>
+                <Link to={`/Profile/${userName}/Edit?email=${login.email}`}><input className="profile-button" type="button" value="Modificar"/></Link>
+              </center>
             </div>
           </div>
         </div>

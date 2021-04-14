@@ -7,7 +7,6 @@ import removeIcon from "../../assets/image/remove.png";
 
 
 const CarouselItem = ({cover, title, year, contentRating, duration, source, setShowMovie, myList = false}) => {
-
   return (
     <>
       <div className="carousel-item">
@@ -18,7 +17,7 @@ const CarouselItem = ({cover, title, year, contentRating, duration, source, setS
               {/* <span className="tooltiptext">Reproducir</span> */}
               <img className="carousel-item__details--img scale" src={playIcon} alt="Play Icon" />&nbsp;
             </div>
-            <div className="tooltip" onClick={() => alert('Agregado a la lista')}>
+            <div className="tooltip" onClick={() => myList ? alert('Eliminado de mi lista') : alert('Agregado a la lista')}>
               {/* <span className="tooltiptext">Agregar a Mi Lista</span> */}
               <img className="carousel-item__details--img scale" src={myList ? removeIcon : plusIcon} alt="Plus Icon" />
             </div>

@@ -11,6 +11,7 @@
     "@testing-library/jest-dom": "^5.11.10",
     "@testing-library/react": "^11.2.6",
     "@testing-library/user-event": "^12.8.3",
+    "dragscroll": "^0.0.8",
     "lodash": "^4.17.21",
     "md5": "^2.3.0",
     "node-sass": "^5.0.0",

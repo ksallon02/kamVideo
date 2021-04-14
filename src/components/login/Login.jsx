@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import logo from "../../assets/image/logo.png";
+import logo from "../../assets/image/logo.svg";
 import "../../assets/styles/components/login/Login.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faLock, faExclamationTriangle } from "@fortawesome/free-solid-svg-icons";
@@ -34,8 +34,10 @@ const Login = ({ setToken }) => {
     <div className="login">
       <section className="login">
         <section className="login__container">
-          <img src={logo} alt="Logo" />
-          <h2>Inicia sesión</h2>
+          <center>
+            <img className="login-logo" src={logo} alt="Logo" />
+            <h2>Inicia sesión</h2>
+          </center>          
           <form className="login__container--form" onSubmit={handleSubmit(postSubmit)}>
             {showError && <React.Fragment><span className="errorMessage"><FontAwesomeIcon icon={faExclamationTriangle}/> Usuario no registrado</span><br/></React.Fragment>}
             <div className="">
