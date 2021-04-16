@@ -3,12 +3,12 @@ import Categories from "./Categories";
 import Carousel from "./Carousel";
 import CarouselItem from "./CarouselItem";
 import noDataIcon from "../../assets/image/No_data.svg";
+import useFilterMovie from "../../hook/useFilterMovie";
 
-const FilterMovie = ({ data, query, setShowMovie }) => {
-  let _ = require("lodash");
-  const allMovies = _.uniqBy(data.trends.concat(data.mylist).concat(data.originals), "id");
-  const dataFilter = allMovies.filter((item) => item.title.toLowerCase().includes(query.toLowerCase()));
+const FilterMovie = ({ data, query }) => {
 
+  const dataFilter = useFilterMovie(data, query);
+  
   return (
     <React.Fragment>
       {dataFilter.length > 0 ? (
@@ -18,8 +18,7 @@ const FilterMovie = ({ data, query, setShowMovie }) => {
               <CarouselItem
                 key={item.id}
                 myList={data.mylist.includes(item)}
-                {...item}
-                setShowMovie={setShowMovie}
+                {...item}             
               />
             ))}
           </Carousel>

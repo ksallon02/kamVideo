@@ -1,12 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import PropTypes from "prop-types";
 import "../../assets/styles/components/dashboard/CarouselItem.scss";
 import playIcon from "../../assets/image/play-icon.png";
 import plusIcon from "../../assets/image/plus-icon.png";
 import removeIcon from "../../assets/image/remove.png";
+import Modal from "../Modal";
+import ModalMovie from "./ModalMovie";
 
+const CarouselItem = ({cover, title, year, contentRating, duration, source, myList = false}) => {
+  const [showModalAction, setShowModalAction] = useState(false);
+  const [showMovie, setShowMovie] = useState(false);
 
-const CarouselItem = ({cover, title, year, contentRating, duration, source, setShowMovie, myList = false}) => {
   return (
     <>
       <div className="carousel-item">
@@ -15,9 +19,9 @@ const CarouselItem = ({cover, title, year, contentRating, duration, source, setS
           <div>
             <div className="tooltip" onClick={() => setShowMovie(source)}>
               {/* <span className="tooltiptext">Reproducir</span> */}
-              <img className="carousel-item__details--img scale" src={playIcon} alt="Play Icon" />&nbsp;
+              <img className="carousel-item__details--img scale" src={ playIcon } alt="Play Icon" />&nbsp;
             </div>
-            <div className="tooltip" onClick={() => myList ? alert('Eliminado de mi lista') : alert('Agregado a la lista')}>
+            <div className="tooltip" onClick={() => setShowModalAction(myList ? 'Eliminado de mi lista' : 'Agregado a la lista') }>
               {/* <span className="tooltiptext">Agregar a Mi Lista</span> */}
               <img className="carousel-item__details--img scale" src={myList ? removeIcon : plusIcon} alt="Plus Icon" />
             </div>
@@ -28,6 +32,10 @@ const CarouselItem = ({cover, title, year, contentRating, duration, source, setS
           </p>
         </div>
       </div>
+      {/* Modal Agregar/Eliminar de mi lista */}
+      <Modal show={showModalAction} setShow={setShowModalAction}><h1><center>{showModalAction}</center></h1></Modal>
+      {/* Modal para mostrar la pelicula */}
+      <Modal show={showMovie} setShow={setShowMovie} ><ModalMovie movie={showMovie}/></Modal>
     </>
   );
 }
