@@ -4,11 +4,10 @@
 body {
   margin: 0;
 }
-
-.dashboard {
+.layout{
+  height: 100vh;
   font-family: $theme-font;
   background: $main-color;
-  height: 100vh;
 }
 
 * {

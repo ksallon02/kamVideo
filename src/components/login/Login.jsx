@@ -8,26 +8,36 @@ import ErrorInput from "../ErrorInput";
 import { EmailRules, PasswordRules } from "./LoginRules";
 import Apis from "../../Apis.json";
 import useFindUsers from "../../hook/useFindUsers";
+import { Link } from "react-router-dom";
 
+const validateUser = (userValid, data) => {
+  let _ = require('lodash');
+  let token = false;
+  _.findIndex(userValid, user => {
+    if(_.isEqual(data, user.login)){
+      token = JSON.stringify(user);
+    }
+  });
+  return token; 
+}
 
 const Login = ({ setToken }) => {
   // const [email, setEmail] = useState("");
   // const [password, setPassword] = useState("");
-  let _ = require('lodash');
+  
   const { register, formState: { errors }, handleSubmit } = useForm();
   const [showError, setShowError] = useState(false);
   const userValid = useFindUsers(Apis.db);
   
   const postSubmit = (data) => {
-    _.findIndex(userValid, user => {
-      if(_.isEqual(data, user.login)){
-        sessionStorage.setItem("token", JSON.stringify(user));
-        setToken(data);
-        window.location.href = '/Dashboard';
-      } else{
-        setShowError(true);
-      }
-    });
+    let token = validateUser(userValid, data);    
+    if(token){
+      sessionStorage.setItem("token", token);
+      setToken(token);
+      window.location.href = '/Dashboard';
+    } else{
+      setShowError(true);
+    }
   }
 
   return (
@@ -61,7 +71,7 @@ const Login = ({ setToken }) => {
             </div>
           </form>
           <p className="login__container--register">
-            No tienes ninguna cuenta <a href="/">Regístrate</a>
+            No tienes ninguna cuenta <Link to="/Register">Regístrate</Link>
           </p>
         </section>
       </section>

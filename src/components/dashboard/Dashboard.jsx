@@ -1,7 +1,6 @@
 import React, { useState } from "react";
-import Header from "./Header";
 import Search from "./Search";
-import Footer from "./Footer";
+import Layout from "../Layout";
 import useInitialState from "../../hook/useInitialState";
 import Apis from "../../Apis.json";
 import MoviesSection from "./MoviesSection";
@@ -15,12 +14,12 @@ const Dashboard = () => {
   const videos = useInitialState(Apis.db, setLoading);  
 
   return (
-    <div className="dashboard">
-      <Header />
-      <Search query={query} setQuery={setQuery} />
-      { loading ? <Loader /> : (query === "" ? <MoviesSection data={videos} /> : <FilterMovie data={videos} query={query} />) }
-      <Footer />
-    </div>
+    <Layout>
+      <div className="dashboard">
+        <Search query={query} setQuery={setQuery} />
+        { loading ? <Loader /> : (query === "" ? <MoviesSection data={videos} /> : <FilterMovie data={videos} query={query} />) }
+      </div>
+    </Layout>
   );
 };
 

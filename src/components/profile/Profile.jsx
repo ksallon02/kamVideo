@@ -1,10 +1,9 @@
 import React from "react";
-import Footer from "../dashboard/Footer";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCrown } from "@fortawesome/free-solid-svg-icons";
 import { faFacebook, faTwitter, faInstagram, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import md5 from "md5";
-import Header from "../dashboard/Header";
+import Layout from "../Layout";
 import { Link, useParams } from "react-router-dom";
 import useGetUrlParam from "../../hook/useGetUrlParam";
 import "../../assets/styles/components/profile/Profile.scss";
@@ -17,8 +16,7 @@ const Profile = ({ login = {}, name = "", userName = ""}) => {
   console.log({email: email, idProfile: idProfile});
 
   return (
-    <React.Fragment>
-      <Header />
+    <Layout>
       <div className="profile">
         <div className="profile-back1">&nbsp;</div>
         <div className="profile-back2">&nbsp;</div>
@@ -63,8 +61,7 @@ const Profile = ({ login = {}, name = "", userName = ""}) => {
           </div>
         </div>
       </div>
-      <Footer />
-    </React.Fragment>
+    </Layout>
   );
 };
 
