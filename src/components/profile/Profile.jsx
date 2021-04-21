@@ -8,6 +8,8 @@ import { Link, useParams } from "react-router-dom";
 import useGetUrlParam from "../../hook/useGetUrlParam";
 import "../../assets/styles/components/profile/Profile.scss";
 
+import {AddAllMovies} from "../../dataAccess/Movies";
+
 const Profile = ({ login = {}, name = "", userName = ""}) => {
   const hash = md5(login.email);
   const { idProfile } = useParams();
@@ -30,7 +32,7 @@ const Profile = ({ login = {}, name = "", userName = ""}) => {
           </div>
           <div className="content-profile-2">
             <div className="flex-column">
-              <span className="profile-name">{name}</span>
+              <span className="profile-name">{`${name} - (${userName})`}</span>
               <span className="flex-center">
                 <FontAwesomeIcon icon={faCrown} />
                 &nbsp;Premium
@@ -54,7 +56,8 @@ const Profile = ({ login = {}, name = "", userName = ""}) => {
                   industry. Lorem Ipsum has been the industry's standard dummy
                   text ever since the 1500s, when an unknown printer took a galley
                   of type and scrambled it to make a type specimen book.
-                </p>                
+                </p>
+                <input className="profile-button" type="button" value="Agregar Peliculas" onClick={AddAllMovies}/>
                 <Link to={`/Profile/${userName}/Edit?email=${login.email}`}><input className="profile-button" type="button" value="Modificar"/></Link>
               </center>
             </div>

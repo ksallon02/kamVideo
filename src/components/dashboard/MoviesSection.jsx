@@ -3,26 +3,26 @@ import Categories from "./Categories";
 import Carousel from "./Carousel";
 import CarouselItem from "./CarouselItem";
 
-const MoviesSection = ({ data }) => {
+const MoviesSection = ({ data, myList}) => {
   return (
     <React.Fragment>
-      {data.mylist?.length > 0 && (
+      {myList?.length > 0 && (
         <Categories title="Mi Lista">
           <Carousel>
-            {data.mylist?.map((item) => (<CarouselItem key={item.id} {...item} myList={true}/>))}
+            {myList?.map((item) => (<CarouselItem key={item.id} item={item} myList={true}/>))}
           </Carousel>
         </Categories>
       )}
 
       <Categories title="Tendencias">
         <Carousel>
-          {data.trends?.map((item) => (<CarouselItem key={item.id} {...item} />))}
+          {data.trends?.map((item) => (<CarouselItem key={item.id} item={item} myList={myList?.map(data => data.id).includes(item.id)}/>))}
         </Carousel>
       </Categories>
 
       <Categories title="Originales">
         <Carousel>
-          {data.originals?.map((item) => (<CarouselItem key={item.id} {...item} />))}
+          {data.originals?.map((item) => (<CarouselItem key={item.id} item={item} myList={myList?.map(data => data.id).includes(item.id)} />))}
         </Carousel>
       </Categories>
     </React.Fragment>

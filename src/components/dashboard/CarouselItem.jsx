@@ -7,9 +7,19 @@ import removeIcon from "../../assets/image/remove.png";
 import Modal from "../Modal";
 import ModalMovie from "./ModalMovie";
 
-const CarouselItem = ({cover, title, year, contentRating, duration, source, myList = false}) => {
+import {addMovieMyList, removeMovieMyList} from "../../dataAccess/Movies";
+
+
+const CarouselItem = ({item, myList = false}) => {
+  const {cover, title, year, contentRating, duration, source } = item;
   const [showModalAction, setShowModalAction] = useState(false);
   const [showMovie, setShowMovie] = useState(false);
+
+
+  const actionMovie = () => {
+    // setShowModalAction(myList ? 'Eliminado de mi lista' : 'Agregado a la lista');
+    myList ? removeMovieMyList(item) : addMovieMyList(item);
+  }
 
   return (
     <>
@@ -21,7 +31,7 @@ const CarouselItem = ({cover, title, year, contentRating, duration, source, myLi
               {/* <span className="tooltiptext">Reproducir</span> */}
               <img className="carousel-item__details--img scale" src={ playIcon } alt="Play Icon" />&nbsp;
             </div>
-            <div className="tooltip" onClick={() => setShowModalAction(myList ? 'Eliminado de mi lista' : 'Agregado a la lista') }>
+            <div className="tooltip" onClick={actionMovie}>
               {/* <span className="tooltiptext">Agregar a Mi Lista</span> */}
               <img className="carousel-item__details--img scale" src={myList ? removeIcon : plusIcon} alt="Plus Icon" />
             </div>

@@ -5,7 +5,7 @@ const useFilterMovie = (data, query) => {
   //Guarda en memoria y renderisa solo cuando las variables que recibe cambian
   useMemo(() => {
     let _ = require("lodash");
-    let allMovies = _.uniqBy(data.trends.concat(data.mylist).concat(data.originals), "id");
+    let allMovies = _.uniqBy(data.trends.concat(data.originals), "id");
     let result = allMovies.filter((item) => item.title.toLowerCase().includes(query.toLowerCase()));
     setDataFilter(result);
   }, [data, query]);

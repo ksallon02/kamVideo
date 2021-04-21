@@ -24,7 +24,7 @@
     flex-direction: column;
     justify-content: space-around;
     min-height: 600px;
-    padding: 60px 68px 40px;
+    padding: 60px 50px 40px;
     width: 400px;
   }
 
@@ -80,4 +80,10 @@
   .button:hover {
     background-color: #c54a75;
   }
+
+  .errorMessage{
+    color: #bf1650;
+    font-weight: bold;
+  }
+
 }

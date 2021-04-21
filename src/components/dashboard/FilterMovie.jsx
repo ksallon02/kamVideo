@@ -5,7 +5,7 @@ import CarouselItem from "./CarouselItem";
 import noDataIcon from "../../assets/image/No_data.svg";
 import useFilterMovie from "../../hook/useFilterMovie";
 
-const FilterMovie = ({ data, query }) => {
+const FilterMovie = ({ data, query, myList }) => {
 
   const dataFilter = useFilterMovie(data, query);
   
@@ -17,8 +17,8 @@ const FilterMovie = ({ data, query }) => {
             {dataFilter?.map((item) => (
               <CarouselItem
                 key={item.id}
-                myList={data.mylist.includes(item)}
-                {...item}             
+                myList={myList?.map(data => data.id).includes(item.id)}
+                item={item}             
               />
             ))}
           </Carousel>
