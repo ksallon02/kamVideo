@@ -42,7 +42,7 @@ const Register = () => {
           <button className="button">Registrarme</button>
         </form>
         <br/>
-        <Link to="/">Iniciar sesión</Link>
+        <Link to="/"><b>Iniciar sesión</b></Link>
       </section>
     </section>
   );

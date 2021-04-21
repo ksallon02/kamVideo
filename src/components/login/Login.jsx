@@ -6,9 +6,8 @@ import { faEnvelope, faLock, faExclamationTriangle } from "@fortawesome/free-sol
 import { useForm } from "react-hook-form";
 import ErrorInput from "../ErrorInput";
 import { EmailRules, PasswordRules } from "./LoginRules";
-import Apis from "../../Apis.json";
-import useFindUsers from "../../hook/useFindUsers";
 import { Link } from "react-router-dom";
+import {useGetAllUsers} from "../../hook/useDataAcces";
 
 const validateUser = (userValid, data) => {
   let _ = require('lodash');
@@ -18,17 +17,14 @@ const validateUser = (userValid, data) => {
       token = JSON.stringify(user);
     }
   });
-  return token; 
+  return token;
 }
 
 const Login = ({ setToken }) => {
-  // const [email, setEmail] = useState("");
-  // const [password, setPassword] = useState("");
-  
   const { register, formState: { errors }, handleSubmit } = useForm();
   const [showError, setShowError] = useState(false);
-  const userValid = useFindUsers(Apis.db);
-  
+  const userValid = useGetAllUsers();
+
   const postSubmit = (data) => {
     let token = validateUser(userValid, data);    
     if(token){
